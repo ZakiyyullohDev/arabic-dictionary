@@ -1,0 +1,174 @@
+@font-face {
+    font-family: arabic;
+    src: url('/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url('/robotoSlab/RobotoSlab-VariableFont_wght.ttf');
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: RobotoSlab;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ADA0FF;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* .container {
+    max-width: 1056px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.title {
+    color: #ADA0FF;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 35px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #a095e7;
+}
+
+.inputs-wrapper {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label-wrapper {
+    width: 350px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    font-size: 20px;
+    color: #ADA0FF;
+    font-weight: 600;
+}
+
+.input {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: RobotoSlab;
+    border: 2.5px solid #ADA0FF;
+    box-shadow: 5px 5px 5px #a095e7;
+}
+
+.input:focus {
+    outline: 1px solid #ADA0FF;
+}
+
+.input::placeholder {
+    color: #ADA0FF;
+}
+
+.swift-btn {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.swift-btn:focus {
+    outline: none;
+}
+
+.swift {
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+}
+
+.animation{
+    animation: rotate 1s ease-in-out;
+}
+
+.translatedText {
+    width: 218px;
+    border-radius: 20px;
+    border: 2.5px solid #ADA0FF;
+}
+
+#transaltedText:focus {
+    outline: 0;
+}
+
+.animation-two {
+    animation: rotate-two 1s ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 180deg;
+    }
+}
+
+@keyframes rotate-two {
+    from {
+        rotate: 180deg;
+    }
+    to {
+        rotate: 0deg;
+    }
+}
